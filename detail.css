@@ -1,0 +1,110 @@
+.detail {
+    margin: 0 200px;
+    height: 500px;
+}
+
+.header h1 {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;   
+}
+
+.container {
+    height: 100%;
+    margin-top: 10px;
+    background-image: url(Todo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-color: rgba(255, 255, 255, 0.7); /* 背景カラー透明 */
+    background-blend-mode: lighten;
+}
+
+.type-area {
+    padding: 30px;
+    text-align: center;
+}
+
+#input-box {  
+    height: 30px;
+    border-radius: 0;
+    background: transparent; /* 背景カラー透明 */
+    border: 5px solid #333; /* 枠線の指定 */
+    font-size: 20px;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 0;
+    background: #333;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer; /* カーソルを当てると指になる */
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 10%;
+    right: 20%; 
+}
+
+.list {
+    margin: 0 auto;
+    width: 60%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+}    
+
+ul li {
+    margin: 0 auto;
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 5px;
+    position: relative;
+} 
+
+ul li:before { 
+    display: inline-block; 
+    vertical-align: middle;
+    /* ボックス */
+    content: ''; 
+    width: 1em;
+    height: 1em;
+    background: #fff;
+    margin-right: 8px;
+    position: relative;
+}
+
+.check-mark {
+    position: absolute;
+    /* チェックマーク */
+    border-color: #333;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); 
+    top: 10px;
+    left: 10px;
+    height: 15px;
+    width: 10px;
+}
+
+.delete-button {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+}
